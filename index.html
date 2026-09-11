@@ -1,203 +1,446 @@
-<style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        padding: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(135deg, #eef4f8, #dcecf5);
-        min-height: 100vh;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contenedor {
-        width: 100%;
-        max-width: 650px;
-
-        background: white;
-
-        border-radius: 22px;
-
-        padding: 30px 25px;
-
-        text-align: center;
-
-        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
-    }
-
-    /* =====================================================
-       LOGO
-       ===================================================== */
-
-    .logo {
-        display: block;
-
-        width: 250px;
-        max-width: 75%;
-
-        height: auto;
-
-        margin: 0 auto 18px auto;
-    }
-
-    /* =====================================================
-       TÍTULO
-       ===================================================== */
-
-    h1 {
-        margin: 0 0 8px 0;
-
-        color: #1f4e79;
-
-        font-size: 26px;
-    }
-
-    .subtitulo {
-        color: #666;
-
-        font-size: 15px;
-
-        line-height: 1.4;
-
-        margin-bottom: 18px;
-    }
-
-    /* =====================================================
-       FECHA
-       ===================================================== */
-
-    .fecha {
-        display: inline-block;
-
-        background: #f1f5f9;
-
-        color: #555;
-
-        padding: 7px 14px;
-
-        border-radius: 10px;
-
-        font-size: 13px;
-
-        margin-bottom: 18px;
-    }
-
-    /* =====================================================
-       VIDEO
-       ===================================================== */
-
-    .video-box {
-        background: #f8fafc;
-
-        border-radius: 15px;
-
-        padding: 20px;
-
-        margin-top: 5px;
-    }
-
-    .etiqueta {
-        font-size: 11px;
-
-        color: #888;
-
-        text-transform: uppercase;
-
-        letter-spacing: 1px;
-
-        margin-bottom: 8px;
-    }
-
-    .video-titulo {
-        font-size: 18px;
-
-        font-weight: bold;
-
-        color: #333;
-
-        line-height: 1.35;
-
-        margin-bottom: 18px;
-    }
-
-    /* =====================================================
-       BOTÓN
-       ===================================================== */
-
-    .boton {
-        display: inline-block;
-
-        background: #1f73b7;
-
-        color: white;
-
-        text-decoration: none;
-
-        padding: 12px 26px;
-
-        border-radius: 10px;
-
-        font-size: 16px;
-
-        font-weight: bold;
-
-        transition: all 0.2s ease;
-    }
-
-    .boton:hover {
-        background: #155a91;
-
-        transform: translateY(-2px);
-
-        box-shadow: 0 5px 15px rgba(31, 115, 183, 0.25);
-    }
-
-    /* =====================================================
-       PIE
-       ===================================================== */
-
-    .info {
-        margin-top: 18px;
-
-        color: #888;
-
-        font-size: 12px;
-
-        line-height: 1.4;
-    }
-
-    /* =====================================================
-       CELULARES
-       ===================================================== */
-
-    @media (max-width: 600px) {
-
-        .contenedor {
-            padding: 25px 18px;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pausas Activas</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #eef4f8, #dcecf5);
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .contenedor {
+            width: 100%;
+            max-width: 650px;
+
+            background: white;
+
+            border-radius: 22px;
+
+            padding: 40px 30px;
+
+            text-align: center;
+
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        /* =====================================================
+           LOGO
+           ===================================================== */
+
+        .logo {
+            display: block;
+
+            width: 280px;
+            max-width: 80%;
+
+            height: auto;
+
+            margin: 0 auto 25px auto;
+        }
+
+        /* =====================================================
+           TÍTULO
+           ===================================================== */
+
         h1 {
-            font-size: 23px;
+            margin: 0 0 10px 0;
+
+            color: #1f4e79;
+
+            font-size: 32px;
         }
 
         .subtitulo {
-            font-size: 14px;
+            color: #666;
+
+            font-size: 17px;
+
+            line-height: 1.5;
+
+            margin-bottom: 25px;
+        }
+
+        /* =====================================================
+           FECHA
+           ===================================================== */
+
+        .fecha {
+            display: inline-block;
+
+            background: #f1f5f9;
+
+            color: #555;
+
+            padding: 10px 18px;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+
+            margin-bottom: 25px;
+        }
+
+        /* =====================================================
+           VIDEO
+           ===================================================== */
+
+        .video-box {
+            background: #f8fafc;
+
+            border-radius: 15px;
+
+            padding: 25px;
+
+            margin-top: 10px;
+        }
+
+        .etiqueta {
+            font-size: 13px;
+
+            color: #888;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 10px;
         }
 
         .video-titulo {
-            font-size: 17px;
+            font-size: 21px;
+
+            font-weight: bold;
+
+            color: #333;
+
+            line-height: 1.4;
+
+            margin-bottom: 25px;
         }
+
+        /* =====================================================
+           BOTÓN
+           ===================================================== */
 
         .boton {
-            width: 100%;
-            padding: 12px;
-            font-size: 15px;
-        }
-    }
+            display: inline-block;
 
-</style>
+            background: #1f73b7;
+
+            color: white;
+
+            text-decoration: none;
+
+            padding: 15px 32px;
+
+            border-radius: 10px;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            transition: all 0.2s ease;
+        }
+
+        .boton:hover {
+            background: #155a91;
+
+            transform: translateY(-2px);
+
+            box-shadow: 0 5px 15px rgba(31, 115, 183, 0.25);
+        }
+
+        /* =====================================================
+           PIE
+           ===================================================== */
+
+        .info {
+            margin-top: 25px;
+
+            color: #888;
+
+            font-size: 13px;
+
+            line-height: 1.5;
+        }
+
+        /* =====================================================
+           CELULARES
+           ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .contenedor {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            .subtitulo {
+                font-size: 15px;
+            }
+
+            .video-titulo {
+                font-size: 18px;
+            }
+
+            .boton {
+                width: 100%;
+                padding: 14px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<div class="contenedor">
+
+
+    <!-- =====================================================
+         LOGO
+         
+         IMPORTANTE:
+         Coloca aquí la URL DIRECTA de tu imagen.
+         
+         Recomendación:
+         500 x 150 px
+         PNG o JPG
+         ===================================================== -->
+
+    <img
+        class="logo"
+        src="https://i.picrd.com/images/Cj4EP50qZAj.jpg"
+        alt="Logo">
+
+
+    <!-- =====================================================
+         TÍTULO
+         ===================================================== -->
+
+    <h1>🧘 Pausas Activas</h1>
+
+    <div class="subtitulo">
+        Tómate unos minutos para moverte,
+        relajarte y cuidar tu bienestar.
+    </div>
+
+
+    <!-- =====================================================
+         FECHA
+         ===================================================== -->
+
+    <div class="fecha" id="fecha"></div>
+
+
+    <!-- =====================================================
+         VIDEO DEL DÍA
+         ===================================================== -->
+
+    <div class="video-box">
+
+        <div class="etiqueta">
+            Pausa activa del día
+        </div>
+
+        <div
+            class="video-titulo"
+            id="tituloVideo">
+        </div>
+
+        <a
+            id="botonVideo"
+            class="boton"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            ▶️ Ver pausa activa
+
+        </a>
+
+    </div>
+
+
+    <div class="info">
+        El video se actualiza automáticamente cada día.
+        <br>
+        ¡Haz una pausa y activa tu día! - Kulkao S.A.💪
+    </div>
+
+
+</div>
+
+
+<script>
+
+    // ==========================================================
+    // VIDEOS
+    // ==========================================================
+
+    const videos = [
+
+        {
+            titulo: "Rutinas 3 de Pausas Activas",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQCTlgt4keldQKkHo6Jz3lVQAfTYT1LYbxDstiimJ7RCPI0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=syMpH5"
+        },
+
+        {
+            titulo: "Pausa activa - Oficina 10 - FISO",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQBLVqJJcLVgQr7haELCU_SWATWUiRQZjkVicFAfODaJnBw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=BUy2m2"
+        },
+
+        {
+            titulo: "Pausa activa - Oficina 4 - FISO",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQD30u4mff-fTLngJoztI1GDAQxQrdSW7ZsqK5-Q1wpRoZ0?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=Jw3rNT"
+        },
+
+        {
+            titulo: "Pausa activa - Oficina 5 - FISO",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQCnj7eCN2XdTKi-zaFfxMqYAeKu3taFTunjZoneh9gOuEM?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=rWzLOY"
+        },
+
+        {
+            titulo: "Pausa activa - Oficina 1 - FISO",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQAXR7XnM7xeQYJk_AUfPBKCAaD69b1fskuPepLrQwTagBw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=hEn8WF"
+        },
+
+        {
+            titulo: "Pausa Activa Lúdica [3 minutos] para la OFICINA o TELETRABAJO",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQAg_peNCKbDSqB7BW1KE3UrAd0Bj9CXxaOQdjXfKYFNMjo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=h2qCYK"
+        },
+
+        {
+            titulo: "Rutina 12 de Pausas Activas",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQDaQizqXCupSILVjOr8DJSAAd2sJufkIhTugm1o-5PUt0I?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=L1zopE"
+        },
+
+        {
+            titulo: "Rutina 14 de Pausas Activas",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQAKRh0eKPO0QLVc_3wjCoa_AQ-o_ja5OjLh54kfUqI-2uI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=HCS8Mg"
+        },
+
+        {
+            titulo: "Rutina 4 de Pausas Activas",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQDX_uc0WWi-SpirkoekETE2AYSNidoisN8tT9ylryC5Kwc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=ClbZvU"
+        },
+
+        {
+            titulo: "Rutina 7 de Pausas Activas",
+            url: "https://kulkao-my.sharepoint.com/:v:/p/admin/IQBItqFRU1ssSKws_hsCgJ2NAabo8HuWmFmJx9uKEy-lkSQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxVmlldyI6Ik15RmlsZXNMaW5rQ29weSJ9fQ&e=eJnfmA"
+        }
+
+    ];
+
+
+    // ==========================================================
+    // FECHA ACTUAL
+    // ==========================================================
+
+    const hoy = new Date();
+
+
+    // ==========================================================
+    // CALCULAR DÍA DEL AÑO
+    //
+    // 1 de enero  = 1
+    // 2 de enero  = 2
+    // ...
+    // ==========================================================
+
+    const inicioDelAño =
+        new Date(hoy.getFullYear(), 0, 1);
+
+    const diferencia =
+        hoy - inicioDelAño;
+
+    const diaDelAño =
+        Math.floor(
+            diferencia / (1000 * 60 * 60 * 24)
+        ) + 1;
+
+
+    // ==========================================================
+    // SELECCIONAR VIDEO
+    //
+    // Día 1  → Video 1
+    // Día 2  → Video 2
+    // ...
+    // Día 10 → Video 10
+    // Día 11 → Video 1
+    // ==========================================================
+
+    const indice =
+        (diaDelAño - 1) % videos.length;
+
+    const videoSeleccionado =
+        videos[indice];
+
+
+    // ==========================================================
+    // MOSTRAR FECHA
+    // ==========================================================
+
+    const opcionesFecha = {
+
+        weekday: "long",
+
+        year: "numeric",
+
+        month: "long",
+
+        day: "numeric"
+
+    };
+
+    document.getElementById("fecha").textContent =
+        hoy.toLocaleDateString(
+            "es-PE",
+            opcionesFecha
+        );
+
+
+    // ==========================================================
+    // MOSTRAR NOMBRE DEL VIDEO
+    // ==========================================================
+
+    document.getElementById(
+        "tituloVideo"
+    ).textContent =
+        videoSeleccionado.titulo;
+
+
+    // ==========================================================
+    // CONFIGURAR BOTÓN
+    // ==========================================================
+
+    document.getElementById(
+        "botonVideo"
+    ).href =
+        videoSeleccionado.url;
+
+</script>
+
+</body>
+</html>
+

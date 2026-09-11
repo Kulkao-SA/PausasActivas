@@ -1,0 +1,2 @@
+# PausasActivas
+Pausas Activas
